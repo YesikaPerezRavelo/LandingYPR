@@ -1,19 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-</head>
-<body>
-    <ol>
-        <li><a href="https://www.example.com/1">Enlace 1</a></li>
-        <li><a href="https://www.example.com/2">Enlace 2</a></li>
-        <li><a href="https://www.example.com/3">Enlace 3</a></li>
-        <li><a href="https://www.example.com/4">Enlace 4</a></li>
-        <li><a href="https://www.example.com/5">Enlace 5</a></li>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YES App</title>
 
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="/css/style.css" />
 
-    </ol>
-</body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="YES Logo" style="position: fixed; top: 10px;" />
+        </a>
+        <nav>
+          <ul class="nav_list">
+            <li class="nav__item">
+              <a class="nav_link" href="pages/login.html">Log in</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav_link" href="pages/store.html">Store</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav_link" href="pages/about.html">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav_link" href="pages/contact.html">Contact Info</a>
+            </li>
+            <li class="nav__item">
+              <a href="#"><img src="Img/download1.png" alt="download icon" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="intro-section">
+      <div class="container">
+        <h1 class="display-2">
+          <span class="display-2-intro">YES App</span>
+          <span class="display-2-description">
+            We're working on something exciting! Soon you'll be able to purchase customized training programs designed to help you reach your fitness goals. Stay tuned for launch updates, workouts, and expert coaching tools.
+          </span>
+        </h1>
+      </div>
+
+      <div class="center-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/z2C-mKVxO_0?si=X2c5AsiDTj8u_I1j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-sm">
+        <div class="container">
+          <div class="footer-sm__icons">
+            <div class="col">Follow us on social media</div>
+            <div class="col">
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__copyright">
+              <div class="col">
+                &copy; 2023 <a href="#">YES</a> – Created by Yesika Perez Ravelo
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

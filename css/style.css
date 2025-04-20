@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    padding: 1rem;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  img,
+  svg {
+    vertical-align: middle;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .col {
+    width: 100%;
+  }
+  
+  /* aca es el background de */
+  header {
+    background-color: white;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+  }
+  
+  .nav_list {
+    list-style: none;
+    padding: 0;
+    background: white;
+    width: 90%;
+    max-width: 1000px;
+    height: 80px;
+    margin: auto;
+  }
+  
+  .nav_list li a {
+    padding: 20px;
+    display: block;
+  }
+  
+  .nav__item {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0 0 1.5rem;
+  }
+  
+  .nav_link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  #intro-section {
+    background-image: url(../images/espalda.JPG);
+    background-position: center;
+    border: 20rem;
+    background-size: cover;
+    padding: 7rem 0 7rem 0;
+  }
+  
+  .display-2 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+  
+  .display-2-description {
+    font-size: 1.4rem;
+    display: inline-block;
+  }
+  
+  .download_title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-style: white;
+  }
+  
+  .download_logo-box {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    width: 500px;
+    height: 50px;
+    color: white;
+  }
+  
+  h2 {
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: white;
+    padding-top: 1rem;
+  }
+  
+  .footer-sm {
+    background-color: black;
+    color: white;
+  }
+  
+  .footer-sm a {
+    color: rgb(245, 238, 238);
+  }
+  
+  .footer-sm a i {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .footer-sm__icons {
+    text-align: right;
+    padding: 0.25rem 0;
+  }
+  
+  .footer-botton {
+    pad: 0.25rem 0;
+  }
+  
+  .footer-bottom__copyright {
+    text-align: end;
+    color: grey;
+    font-weight: 300;
+    padding: 0.25rem 0;
+  }
+  
+  .footer-botton_copyright a {
+    color: grey;
+    text-decoration: none;
+  }
+  
+  .help_section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .help_section h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+  }
+  
+  .help_section form {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  
+  .loginbox {
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .loginbox h1 {
+    text-align: center;
+    padding: 7px 7px 15px 7px;
+    border-bottom: 2px solid silver;
+  }
+  
+  .loginbox form {
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+  
+  form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 18px 0;
+  }
+  
+  .txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 18px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+  
+  .txt_field label {
+    position: center;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+  }
+  
+  .pass {
+    margin: -5px 0 20px 5px;
+    color: grey;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #adadad;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    outline: none;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  article {
+    display: flex;
+    flex: 0 1 300px;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  
+  article img {
+    order: -1;
+    align-self: center;
+    border-radius: 1rem;
+  }
+  
+  article button {
+    background: white;
+    color: black;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  article h2 {
+    color: white;
+  }
+  
+  article p {
+    color: white;
+  }
+  
+  iframe {
+    position: center;
+  }
+
+
+
+  /* Centrar el iframe del video */
+  .center-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto 2rem auto; /* más espacio arriba */
+    width: 100%;
+    padding-top: 4rem;
+  }
+  
+
+/* Ajustes opcionales para el h1 y textos de bienvenida */
+.display-2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.display-2-intro {
+  display: block;
+  font-size: 3rem;
+  color: white; /* o tu color de marca */
+  margin-bottom: 1rem;
+}
+
+.display-2-description {
+  display: block;
+  font-size: 1.25rem;
+  color: white;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-section button {
+  background-color: #e63946;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-section button:hover {
+  background-color: #c92234;
+}
