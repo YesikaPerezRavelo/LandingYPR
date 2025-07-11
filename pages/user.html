@@ -7,7 +7,7 @@
     <title>YES App</title>
 
     <!-- CSS Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,44 +26,45 @@
   <body>
     <header>
       <div class="container">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Yes" style="position: fixed; height: 60px;" />
+        <a href="../index.html">
+          <img src="/images/logo.png" alt="Yes" style="position: fixed; height: 60px;" />
         </a>
-   
+        
+      
 
         
       </div>
     </header>
     
-
-   
-
-      <div class="carousel">
+ <!-- <div class="carousel">
 
 <div class="carousel__track-container">
 
 <div class="carousel__overlay">
-  <h1 class="carousel__title">Entrená con energía</h1>
-  <p class="carousel__subtitle">Clases online para todos los niveles</p>
+ 
+
+
+
+
 </div>
 
 
 
   <ul class="carousel__track">
     <li class="carousel__slide current-slide">
-      <img src="images/image1.jpg" alt="">
+      <img src="/images/image6.jpg" alt="">
     </li>
      <li class="carousel__slide">
-      <img src="images/image2.jpg" alt="">
+      <img src="/images/image7.jpg" alt="">
     </li>
     <li class="carousel__slide">
-      <img src="images/image3.jpg" alt="">
+      <img src="/images/image8.jpg" alt="">
     </li>
     <li class="carousel__slide">
-      <img src="images/image4.jpg">
+      <img src="/images/image9.jpg">
     </li>
      <li class="carousel__slide">
-      <img src="images/image5.jpg" alt="">
+      <img src="/images/image10.jpg" alt="">
     </li>
    
   </ul>
@@ -89,13 +90,29 @@
    <button class="carousel__indicator"> </button>
   <button class="carousel__indicator"></button>
 
-</div>
+</div> -->
 
-<section class="training-cards">
-  <h2 class="section-title">Nuestros Entrenamientos</h2>
-  <div class="cards-container"></div>
+    <!-- <section id="intro-section"> -->
+
+   
+
+
+<section class="login">
+  <h2>Ingresar</h2>
+  <form id="loginForm">
+    <label for="userType">Tipo de usuario:</label>
+    <select id="userType" name="userType" required>
+      <option  value="">Seleccionar...</option>
+      <option value="admin">Admin</option>
+      <option value="adminUser">AdminUser</option>
+    </select>
+
+    <label for="code">Código de acceso:</label>
+    <input type="password" id="code" name="code" required />
+
+    <button  type="submit">Ingresar</button>
+  </form>
 </section>
-
 
 
 
@@ -105,12 +122,14 @@
     
     <footer class="footer"></footer>
 
+
     
   </body>
 </html>
 
-<script type="module" src="js/main.js"></script>
-<script src="js/carousel.js"></script>
-<script type="module" src="js/injectLayout.js"></script>
-<script type="module" src="js/products.js"></script>
+
+<script type="module" src="/js/injectLayout.js"></script>
+<script src="/js/carousel.js"></script>
+<script type="module" src="/js/injectCarousel.js"></script>
+<script src="/js/user.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

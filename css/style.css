@@ -811,3 +811,140 @@ display: block;
 .carousel__subtitle {
   font-size: 1.2rem;
 }
+
+
+
+
+.btn-rounded { /* Botones con estilo */
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: black;
+  margin-top: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-rounded :hover {
+
+  background-color: rgb(91, 94, 94); 
+}
+
+
+.login {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #d32f2f;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.login input,
+.login select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.login input:focus,
+.login select:focus {
+  border-color: black;
+}
+
+.login button {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login button:hover {
+  background-color: #444242;
+}
+
+.footer .newsletter {
+  flex: 1 1 200px;
+}
+
+
+
+
+
+.footer .newsletter input[type="email"],
+.footer .newsletter textarea {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s;
+}
+
+
+
+.footer .newsletter textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.footer .newsletter input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.footer .newsletter label {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.footer .newsletter button {
+  background-color: black;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer .newsletter button:hover {
+  background-color: black;
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Fuerza",
+    "image": "images/fuerza.JPG",
+    "alt": "Entrenamiento de fuerza",
+    "description": "Mejorá tu potencia y tonificá tu cuerpo con rutinas progresivas de fuerza.",
+    "price": 19.99
+  },
+  {
+    "id": 2,
+    "title": "Yoga",
+    "image": "images/elasticidad.JPG",
+    "alt": "Yoga en familia",
+    "description": "Conectá tu cuerpo y mente con sesiones de yoga guiadas para todos los niveles.",
+    "price": 15.99
+  },
+  {
+    "id": 3,
+    "title": "Divertido",
+    "image": "images/divertido.JPG",
+    "alt": "Cardio intenso",
+    "description": "Activá tu energía con entrenamientos HIIT, quema grasa y mejorá tu resistencia.",
+    "price": 12.5
+  },
+  {
+    "id": 4,
+    "title": "Yoga",
+    "image": "images/escorpion.JPG",
+    "alt": "Yoga",
+    "description": "Activá tu energía con entrenamientos HIIT, quema grasa y mejorá tu resistencia.",
+    "price": 17.0
+  }
+]
