@@ -11,6 +11,7 @@ body {
 
 img {
   max-width: 100%;
+  border-radius: 10px
 }
 
 img,
@@ -820,6 +821,7 @@ display: block;
   padding: 12px 24px;
   background-color: black;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #fff;
   border: none;
   border-radius: 999px;
@@ -835,6 +837,8 @@ display: block;
 
   background-color: rgb(91, 94, 94); 
 }
+
+
 
 
 .login {

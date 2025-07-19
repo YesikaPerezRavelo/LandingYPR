@@ -9,7 +9,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   window.location.href = "/pages/createProduct.html";
 } else if (userType === "adminUser" && code === "4321") {
   localStorage.setItem("userType", userType);
-  window.location.href = "/cart.html";
+  window.location.href = "/pages/cart.html";
 
 
   } else {
