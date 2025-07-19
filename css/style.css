@@ -815,7 +815,7 @@ display: block;
 
 
 
-.btn-rounded { /* Botones con estilo */
+.btn-rounded { 
   display: inline-block;
   padding: 12px 24px;
   background-color: black;
@@ -947,4 +947,88 @@ display: block;
 
 .footer .newsletter button:hover {
   background-color: black;
+}
+
+#productForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#productForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+#productForm input,
+#productForm textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+
+#productForm button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+#productForm button:hover {
+  background-color: #333;
+}
+
+
+.custom-products {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+
+.custom-products ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.custom-products li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.custom-products button.delete-btn {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.custom-products button.delete-btn:hover {
+  background: #c92234;
 }

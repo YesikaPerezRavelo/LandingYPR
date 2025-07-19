@@ -8,11 +8,10 @@ const injectPartials = async () => {
     headerContainer.insertAdjacentHTML('beforeend', navbar);
 
 
-    // 👇 Este bloque va ADENTRO del if (headerContainer)
+    // Esperar a que se inyecte el HTML antes de manipular los elementos
     setTimeout(() => {
+      // Lógica para el usuario
       const userLink = document.querySelector('.nav_link.user-link');
-
-
       if (userLink) {
         const token = localStorage.getItem("token");
         const user = JSON.parse(localStorage.getItem("user"));
@@ -22,10 +21,18 @@ const injectPartials = async () => {
         userLink.setAttribute("href", token ? "/user.html" : "/login.html");
 
 
-        // Cambiar ícono por saludo si hay usuario
+        // Mostrar saludo si hay usuario
         if (user) {
           userLink.innerHTML = `<span class="username">Hola, ${user.name}</span>`;
         }
+      }
+
+
+      // Número del carrito
+      const cartCount = document.getElementById("cart-count-number");
+      if (cartCount) {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cartCount.textContent = cart.length;
       }
     }, 100);
   }

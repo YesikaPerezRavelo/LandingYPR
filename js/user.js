@@ -4,27 +4,15 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const userType = document.getElementById("userType").value;
   const code = document.getElementById("code").value;
 
-  if (
-    (userType === "admin" && code === "1234") ||
-    (userType === "adminUser" && code === "4321")
-  ) {
-    localStorage.setItem("userType", userType);
+ if (userType === "admin" && code === "1234") {
+  localStorage.setItem("userType", userType);
+  window.location.href = "/pages/createProduct.html";
+} else if (userType === "adminUser" && code === "4321") {
+  localStorage.setItem("userType", userType);
+  window.location.href = "/cart.html";
 
-    Swal.fire({
-      title: "¡Ingreso exitoso!",
-      text: "Ahora podés ver tus productos en el carrito.",
-      icon: "success",
-      confirmButtonText: "Ir al carrito"
-    }).then(() => {
-      window.location.href = "/pages/cart.html";
-    });
 
   } else {
-    Swal.fire({
-      title: "Código incorrecto",
-      text: "Verificá el código y el tipo de usuario.",
-      icon: "error",
-      confirmButtonText: "Volver a intentar"
-    });
+    alert("Código incorrecto");
   }
 });

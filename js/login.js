@@ -4,12 +4,14 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const userType = document.getElementById("userType").value;
   const code = document.getElementById("code").value;
 
-  if (
-    (userType === "admin" && code === "1234") ||
-    (userType === "adminUser" && code === "4321")
-  ) {
-    localStorage.setItem("userType", userType);
-    window.location.href = "/user.html"; // redirige a la página de perfil
+ if (userType === "admin" && code === "1234") {
+  localStorage.setItem("userType", userType);
+  window.location.href = "/pages/create-product.html";
+} else if (userType === "adminUser" && code === "4321") {
+  localStorage.setItem("userType", userType);
+  window.location.href = "/user.html";
+
+
   } else {
     alert("Código incorrecto");
   }
