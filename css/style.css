@@ -1036,3 +1036,109 @@ display: block;
 .custom-products button.delete-btn:hover {
   background: #c92234;
 }
+
+.review-carousel {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.review-carousel .section-title {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.review-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #fbbf24;
+}
+
+
+.review-card .stars {
+  color: #fbbf24;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+
+.review-meta {
+  color: #ccc;
+  font-size: 14px;
+}
+
+
+/* Dots */
+.carousel-dots {
+  margin-top: 20px;
+}
+
+
+.carousel-dots button {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: #888;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.carousel-dots button.active {
+  background-color: #fbbf24;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .review-card {
+    width: 45%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .review-card {
+    width: 100%;
+  }
+}

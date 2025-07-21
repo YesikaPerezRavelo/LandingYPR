@@ -1,6 +1,7 @@
 const injectPartials = async () => {
   const headerContainer = document.querySelector('header');
   const footerContainer = document.querySelector('footer');
+  const reviewsContainer = document.getElementById('reviews-placeholder'); 
 
 
   if (headerContainer) {
@@ -8,27 +9,18 @@ const injectPartials = async () => {
     headerContainer.insertAdjacentHTML('beforeend', navbar);
 
 
-    // Esperar a que se inyecte el HTML antes de manipular los elementos
     setTimeout(() => {
-      // Lógica para el usuario
       const userLink = document.querySelector('.nav_link.user-link');
       if (userLink) {
         const token = localStorage.getItem("token");
         const user = JSON.parse(localStorage.getItem("user"));
-
-
-        // Cambiar href según sesión
         userLink.setAttribute("href", token ? "/user.html" : "/login.html");
-
-
-        // Mostrar saludo si hay usuario
         if (user) {
           userLink.innerHTML = `<span class="username">Hola, ${user.name}</span>`;
         }
       }
 
 
-      // Número del carrito
       const cartCount = document.getElementById("cart-count-number");
       if (cartCount) {
         const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -42,6 +34,19 @@ const injectPartials = async () => {
     const footer = await fetch('/partials/footer.html').then(res => res.text());
     footerContainer.innerHTML = footer;
   }
+
+
+  if (reviewsContainer) {
+  const reviews = await fetch('/partials/reviews.html').then(res => res.text());
+  reviewsContainer.innerHTML = reviews;
+
+
+  // Esperar un momento para asegurar que el DOM de reviews esté listo
+  setTimeout(() => {
+    setupReviewCarousel();
+  }, 50);
+}
+
 };
 
 
